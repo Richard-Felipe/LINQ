@@ -48,14 +48,16 @@ string[] pais1 = new string[] { "Brasil", "argentina", "Russia", "Japão" };
 string[] pais2 = new string[] { "Brasil", "Argentina", "Alemanha", "China", "russia" };
 
 IEnumerable<string> paisDistintos = pais1.Except(pais2).ToList();
-
 //foreach (string pais in paisDistintos)
 //    Console.Write($"{pais} ");
 
+
+//Except com Sobrecarga e utilizando IEqualityComparer
+
 IEnumerable<string> paisDistintosIEquality = pais1.Except(pais2, StringComparer.OrdinalIgnoreCase);
 
-foreach (string pais in paisDistintosIEquality)
-    Console.Write($"{pais} ");
+//foreach (string pais in paisDistintosIEquality)
+//    Console.Write($"{pais} ");
 
 
 #endregion
