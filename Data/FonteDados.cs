@@ -26,4 +26,18 @@ public class FonteDados
 
         return usuarios;
     }
+
+    public static List<Aluno> GetAlunos()
+    {
+        var alunos = new List<Aluno>()
+        {
+            new Aluno { Nome = "Pedro", Idade = 18},
+            new Aluno { Nome = "Amanda", Idade = 11},
+            new Aluno { Nome = "Lincoln", Idade = 19},
+            new Aluno { Nome = "Matheus", Idade = 11},
+            new Aluno { Nome = "Frederico", Idade = 21},
+
+        };
+        return alunos;
+    }
 }
